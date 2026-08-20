@@ -116,7 +116,7 @@ def build_headers() -> dict[str, str]:
             f"(contact: {SEC_CONTACT_EMAIL})"
         ),
         "Accept-Encoding": "gzip, deflate",
-}
+     }
 
 
 def get_json(
