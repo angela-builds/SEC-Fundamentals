@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Raw SEC JSON is large and fully regeneratable from 01_fetch_sec_companyfacts.py --
+# don't bloat the git repo with it. Comment this out if you'd rather version it.
+data/raw/*.json
+
+# Generated outputs -- also regeneratable, keep the repo about code, not results.
+outputs/excel/*.xlsx
+outputs/charts/
+outputs/logs/
+outputs/06_quality_check/*.csv
+outputs/06_quality_check/*.json
